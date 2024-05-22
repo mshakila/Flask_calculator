@@ -15,7 +15,8 @@ def math_operation():
         result = num1 * num2 * num3
     else:
         return "check the operation"
-    return jsonify(result)
+    #return jsonify(result)
+    return (f"The operation is {operation} and the result is {result}")
 
 if __name__ == "__main__":
     app.run(debug=True)

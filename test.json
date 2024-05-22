@@ -1,7 +1,14 @@
+// for app.py
 {
-
     "operation":"divide",
     "num1": 199999,
-    "num2" : 3
-    
+    "num2" : 3  
     }
+
+// for test.py
+{
+    "operation":"add",
+    "num1":10,
+    "num2":20,
+    "num3":30
+}
