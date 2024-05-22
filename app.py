@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template, url_for
+from flask import Flask, request, json, jsonify
 
 app = Flask(__name__)
 
@@ -18,10 +18,17 @@ def math_operator():
         result = num1 - num2
     elif operation == "multiply":
         result = num1 * num2
+    elif operation == "divide":
+        result = round(( num1 / num2),3)
+    elif operation == "reminder":
+        result = num1 % num2
+    elif operation == "floor":
+        result = num1 //num2
     else:
-        result = num1 / num2
+        return "check the operation given"
     
-    return result
+    #return jsonify(result)
+    return "The operation is {} and the result is {}".format(operation,result)
 
 
 
