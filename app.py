@@ -18,10 +18,9 @@ def math_operator():
         result = num1 - num2
     elif operation == "multiply":
         result = num1 * num2
-    elif operation == "divide"
-        result = num1 / num2
     else:
-        print("check the numbers")
+        result = num1 / num2
+    
     return result
 
 
